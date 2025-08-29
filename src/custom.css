@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #067b95;
+  --primary-color-dark: #004555;
+  --primary-color-light: #ebe5fc;
+  --secondary-color: #6c757d;
+  --secondary-color-dark: #54595e;
+  --secondary-color-light: #abb5be;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.text-primary-color {
+  color: var(--primary-color);
+}
+
+.logo-header {
+  max-width: 100px;
+}
+
+.logo-footer {
+  max-width: 100px;
+}
+
+.pt-48 {
+  padding-top: 48px;
+}
+
+.pt-48 {
+  padding-top: 48px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+.w-1100 {
+  width: 1100px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-top-tasks {
+  border-top: 4px solid #67c0c2;
+}
