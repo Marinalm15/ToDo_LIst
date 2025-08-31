@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "0ed5",
+      "title": "Falar com o Filipe Zuzarte",
+      "completed": true,
+      "createdAt": "2025-08-31T16:09:20.868Z",
+      "finishedAt": "2025-08-31T16:17:50.951Z"
+    },
+    {
+      "id": "c180",
+      "title": "Fazer deploy do projeto",
+      "completed": false,
+      "createdAt": "2025-08-31T16:09:50.903Z",
+      "finishedAt": null
+    },
+    {
+      "id": "2f87",
+      "title": "Fazer a folha de horas",
+      "completed": false,
+      "createdAt": "2025-08-31T16:10:09.645Z",
+      "finishedAt": null
+    }
+  ]
+}
