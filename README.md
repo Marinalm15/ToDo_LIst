@@ -42,7 +42,7 @@ O projeto usa o **JSON Server** para simular uma API REST.
 Para iniciar a API, rode o comando abaixo:
 
 ```bash
-yarn mock:server
+yarn run server 
 ```
 
 A API estará disponível em:  
