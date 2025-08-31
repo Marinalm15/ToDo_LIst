@@ -25,14 +25,14 @@ Este projeto é um **Task Board** simples desenvolvido em **React** com **JSON S
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/Marinalm15/ToDo_LIst.git
+
 ```
 
 Instale as dependências:
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Rodando o backend mockado (API)
