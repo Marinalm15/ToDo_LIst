@@ -33,6 +33,7 @@ Instale as dependências:
 
 ```bash
 npm install
+npm install json-server --save-dev
 ```
 
 ### Rodando o backend mockado (API)
