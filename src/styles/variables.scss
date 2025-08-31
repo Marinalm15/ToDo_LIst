@@ -1,11 +1,18 @@
+@use "sass:map";
+
 $enable-css-variables: true !default;
 
-$primary: #4f46e5;
-$secondary: #f59e0b;
-$success: #10b981;
-$danger: #ef4444;
-$info: #3b82f6;
-$light: #f3f4f6;
+$primary: #067b95;
+$primary-dark: #004555;
+$primary-light: #ebe5fc;
+$secondary: #6c757d;
+$secondary-dark: #54595e;
+$secondary-light: #abb5be;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #f8f9fa;
 $dark: #111827;
 
 $theme-colors: (
@@ -30,68 +37,86 @@ $grays: (
   900: #212529
 );
 
-$blues: (
-  50:  #eff6ff,
-  100: #dbeafe,
-  200: #bfdbfe,
-  300: #93c5fd,
-  400: #60a5fa,
-  500: #3b82f6,
-  600: #2563eb,
-  700: #1d4ed8,
-  800: #1e40af,
-  900: #1e3a8a
+$reds: (
+  50:  #fef2f2,
+  100: #F8D7DA,
+  200: #fecaca,
+  300: #fca5a5,
+  400: #f87171,
+  500: #ef4444,
+  600: #dc2626,
+  700: #842029,
+  800: #991b1b,
+  900: #7f1d1d
 );
 
-$greens: (
-  50:  #f0fdf4,
-  100: #dcfce7,
-  200: #bbf7d0,
-  300: #86efac,
-  400: #4ade80,
-  500: #22c55e,
-  600: #16a34a,
-  700: #15803d,
-  800: #166534,
-  900: #14532d
+$greens: ( 
+    50: #f0fdf4, 
+    100: #dcfce7, 
+    200: #bbf7d0, 
+    300: #86efac, 
+    400: #4ade80, 
+    500: #198754, 
+    600: #16a34a, 
+    700: #15803d, 
+    800: #166534, 
+    900: #14532d 
 );
 
-/* Gerar classes de texto */
+
 @each $key, $value in $grays {
   .text-gray-#{$key} {
     color: var(--bs-gray-#{$key}) !important;
   }
 }
 
-/* Gerar classes de fundo */
+
 @each $key, $value in $grays {
   .bg-gray-#{$key} {
     background-color: var(--bs-gray-#{$key}) !important;
   }
 }
 
-@each $key, $value in $blues {
-  .text-blue-#{$key} {
-    color: var(--bs-blue-#{$key}) !important;
+@each $key, $value in $reds {
+  :root {
+    --bs-red-#{$key}: #{$value};
   }
 }
 
-/* Classes de fundo azul */
-@each $key, $value in $blues {
-  .bg-blue-#{$key} {
-    background-color: var(--bs-blue-#{$key}) !important;
+@each $key, $value in $reds {
+  .text-red-#{$key} {
+    color: var(--bs-red-#{$key}) !important;
+  }
+}
+
+@each $key, $value in $reds {
+  .bg-red-#{$key} {
+    background-color: var(--bs-red-#{$key}) !important;
   }
 }
 
 @each $key, $value in $greens {
-  .text-green-#{$key} {
-    color: var(--bs-green-#{$key}) !important;
+  :root {
+    --bs-green-#{$key}: #{$value};
   }
 }
 
-/* Classes de fundo verde */
-@each $key, $value in $greens {
-  .bg-green-#{$key} {
-    background-color: var(--bs-green-#{$key}) !important;
-  }
+@each $key, $value in $greens { 
+    .text-green-#{$key} { 
+        color: var(--bs-green-#{$key}) !important; 
+    } 
+} 
+
+@each $key, $value in $greens { 
+    .bg-green-#{$key} { 
+        background-color: var(--bs-green-#{$key}) !important; 
+    } 
+}
+
+.table thead tr {
+  border-bottom: 2px solid map.get($grays, 300) !important;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid map.get($grays, 300) !important;
 }
